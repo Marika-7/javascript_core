@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test 13</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+	<form class="form" name="form">
+		<h2>Please sign up</h2>
+		<label for="fname" class="form__label">
+			<span class="form__span">First name</span>
+			<input type="text" class="form__input" id="fname" name="fname" autocomplete="off">
+			<p class="modal modal_fname hide">Please provide a valid First name.</p>
+		</label>
+		<label for="lname" class="form__label">
+			<span class="form__span">Last name</span>
+			<input type="text" class="form__input" id="lname" name="lname" autocomplete="off">
+			<span class="modal modal_lname hide">Please provide a valid Last name.</span>
+		</label>
+		<label for="email" class="form__label">
+			<span class="form__span">Email address</span>
+			<input type="email" class="form__input" id="email" name="email" autocomplete="off">
+			<span class="modal modal_email hide">Please provide a valid Email address.</span>
+		</label>
+		<label for="password" class="form__label">
+			<span class="form__span">Password</span>
+			<input type="password" class="form__input" id="password" name="password">
+			<span class="modal modal_password hide">Please provide a valid Password.</span>
+		</label>
+		<label for="check">
+			<input type="checkbox" class="form__check" id="check" name="check">
+			<span>I agree with Privat Policy</span>
+		</label>
+		<button type="submit" class="form__button disabled" name="signup" disabled>Sign Up</button>
+	</form>
+	<div class="shadow hide">
+		<div class="great">
+			<div class="great__top">
+				<i class="uil uil-check"></i>
+			</div>
+			<div class="great__bottom">
+				<h3>Great!</h3>
+				<p>Your account has been created successfully.</p>
+				<button type="button" class="great__button">
+					<span>Start Exploring</span>
+					<i class="uil uil-arrow-right"></i>
+				</button>
+			</div>
+		</div>
+	</div class="shadow">
+
+	<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+    overflow: hidden;
+}
+.container {
+    @include box(675px, 600px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    @include distance(auto, 40px 0);
+    @include flex_position(column);
+}
+.clock {
+    &__timer {
+        font-size: 80px;
+    }
+}
+.buttons {
+    @include box(350px, 30px);
+    @include flex_position(row);
+    &__btn  {
+        @include box(100px, 30px);
+        background-color: $btn-bg;
+        border: 1px solid $btn-border;
+        border-radius: 3px;
+        outline: none;
+        color: $btn-text;
+        cursor: pointer;
+        &:hover {
+            background-color: $btn-hover;
+        }
+        &:focus {
+            background-color: $btn-hover;
+            box-shadow: 0 0 0 3px $btn-focus;
+            border: none;
+        }
+        &:disabled {
+            background-color: $btn-bg-dis;
+            border: none;
+        }
+    }
+}
+.game {
+    @include box(100%, 300px);
+    @include flex_position(row);
+    &__box {
+        @include box(300px, 300px);
+        background-color: $game-bg;
+        box-shadow: 0 0 10px 0px;
+        @include flex_position(row);
+    }
+    &__cell {
+        @include box(75px, 75px);
+    }
+    &__item {
+        @include box(75px, 75px);
+        &[value="1"] {
+            background-position: 0 0;
+        }
+        &[value="2"] {
+            background-position: -75px 0;
+        }
+        &[value="3"] {
+            background-position: -150px 0;
+        }
+        &[value="4"] {
+            background-position: -225px 0;
+        }
+        &[value="5"] {
+            background-position: 0 -75px;
+        }
+        &[value="6"] {
+            background-position: -75px -75px;
+        }
+        &[value="7"] {
+            background-position: -150px -75px;
+        }
+        &[value="8"] {
+            background-position: -225px -75px;
+        }
+        &[value="9"] {
+            background-position: 0 -150px;
+        }
+        &[value="10"] {
+            background-position: -75px -150px;
+        }
+        &[value="11"] {
+            background-position: -150px -150px;
+        }
+        &[value="12"] {
+            background-position: -225px -150px;
+        }
+        &[value="13"] {
+            background-position: 0 -225px;
+        }
+        &[value="14"] {
+            background-position: -75px -225px;
+        }
+        &[value="15"] {
+            background-position: -150px -225px;
+        }
+        &[value="16"] {
+            background-position: -225px -225px;
+        }
+    }
+}
+.hover {
+    background-color: $cell-hover;
+}
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &__block {
+        display: none;
+        @include box(500px, 175px);
+        @include distance(0 auto, 30px 0 15px);
+        background-color: $bg-color;
+        border: 1px solid $modal-border;
+        border-radius: 5px;
+        p {
+            @include box(100%, 75px);
+            @include distance(0, 20px);
+            border: 1px solid $modal-p-border;
+            border-left: none;
+            border-right: none;
+            color: $text-color;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+        }
+        form {
+            @include flex_position(row);
+            justify-content: center;
+        }
+    }
+    &__btn {
+        height: 38px;
+        @include distance(15px 4px, 10px);
+        border-radius: 3px;
+        outline: none;
+        color: $btn-text;
+        cursor: pointer;
+        &_close {
+            background-color: $btn-bg;
+            border: 1px solid $btn-border;
+            &:hover {
+                background-color: $btn-hover;
+            }
+            &:focus {
+                background-color: $btn-hover;
+                box-shadow: 0 0 0 3px $btn-focus;
+                border: none;
+            }
+    }
+        &_check {
+            background-color: $modal-check;
+            border: 1px solid $check-border;
+            &:hover {
+                background-color: $check-hover;
+            }
+            &:focus {
+                background-color: $check-hover;
+                box-shadow: 0 0 0 3px $check-focus;
+                border: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@mixin box($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin distance($m, $p) {
+    margin: $m;
+    padding: $p;
+}
+
+@mixin flex_position($d) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

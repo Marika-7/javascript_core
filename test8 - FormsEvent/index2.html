@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test 8.2</title>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+	<link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+
+	<div class="block block1">
+
+		<h2 class="green">Create your account</h2>
+		
+		<form name="f1">
+	
+			<label>
+				<span>First Name</span>
+				<input class="text" type="text" name="fname" placeholder="type here..." required>
+			</label>
+	
+			<label>
+				<span>Second Name</span>
+				<input class="text" type="text" name="sname" placeholder="type here..." required>
+			</label>
+	
+			<label>
+				<span>Email address</span>
+				<input class="text" type="email" name="email" placeholder="enter email" required>
+			</label>
+
+			<fieldset name="sex">
+				<label for="man">
+					<input type="radio" id="man" name="man" value="man" checked>
+					<span>man</span>
+				</label>
+	
+				<label for="woman">
+					<input type="radio" id="woman" name="man" value="woman">
+					<span>woman</span>
+				</label>
+			</fieldset>
+	
+			<label>
+				<span>Position</span>
+				<select class="text" name="position" required>
+					<option value="">Choose...</option>
+					<option value="Frontend">Frontend</option>
+					<option value="Backend">Backend</option>
+					<option value="QC/QA">QC/QA</option>
+				</select>
+			</label>
+
+			<label for="agree">
+				<input type="checkbox" id="agree" name="agree" required>
+				<span>I agree all statement in Terms of service</span>
+			</label>
+
+			<button type="submit" class="green" name="signUp">Sign up</button>
+	
+		</form>
+	</div>
+
+	<div class="block block2">
+
+		<div class="header green"></div>
+		<div class="userBlock">
+			<img src="./images/man.png" alt="User's avatar">
+			<p class="userName"></p>
+			<p class="userEmail"></p>
+			<p class="userPosition"></p>
+		</div>
+		<form name="f2">
+			<button type="submit" name="signOut">Sign Out</button>
+		</form>
+		<div class="links green">
+			<i class="uil uil-facebook-f"></i>
+			<i class="uil uil-github-alt"></i>
+			<i class="uil uil-linkedin-alt"></i>
+		</div>
+
+	</div>
+
+	<script src="./script2.js"></script>
+</body>
+</html>

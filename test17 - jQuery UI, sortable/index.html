@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test 17</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="clock">
+			<p class="clock__timer">01:00</p>
+		</div>
+		<form class="buttons">
+			<button type="button" id="btn_start" class="buttons__btn">Start game!</button>
+			<button type="button" id="btn_result" class="buttons__btn" disabled>Check result</button>
+			<button type="button" id="btn_new" class="buttons__btn">New game</button>
+		</form>
+		<div class="game">
+			<div id="gameStart" class="game__box">
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+				<div class="game__cell"><div class="game__item"></div></div>
+			</div>
+			<div id="gameEnd" class="game__box">
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+				<div class="game__cell"></div>
+			</div>
+		</div>
+	</div>
+	<div class="modal">
+		<div id="modalSure" class="modal__block">
+			<p>You still have time, you sure? <span id="modalTime">00:00</span></p>
+			<form class="" name="">
+				<button type="button" id="btn_closeSure" class="modal__btn modal__btn_close">Close</button>
+				<button type="button" id="btn_check" class="modal__btn modal__btn_check">Check</button>
+			</form>
+		</div>
+		<div id="modalLose" class="modal__block">
+			<p>It's a pity, but you lost</p>
+			<form class="" name="">
+				<button type="button" id="btn_closeLose" class="modal__btn modal__btn_close">Close</button>
+			</form>
+		</div>
+		<div id="modalWin" class="modal__block">
+			<p>Woohoo, well done, do it!</p>
+			<form class="" name="">
+				<button type="button" id="btn_closeWin" class="modal__btn modal__btn_close">Close</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block1 {
+    height: 940px;
+    padding-top: 70vh;
+    background-color: whitesmoke;
+}
+.down {
+    text-align: center;
+    font-size: 30px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.block2 {
+    padding: 140px 80px;
+    height: 720px;
+}
+p {
+    font-size: 40px;
+}
+hr {
+    width: 260px;
+    height: 7px;
+    margin-top: 30px;
+    background-color: red;
+    border: none;
+}
+img {
+    margin-top: 100px;
+    float: right;
+}
+
+.block3 {
+    height: 100vh;
+    background-color: whitesmoke;
+    padding-top: 43vh;
+}
+.up {
+    text-align: center;
+    font-size: 100px;
+}
+h2:hover {
+    color: firebrick;
+    cursor: pointer;
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg1 {
+    height: 50vh;
+    background-color: #f9f9f9;
+}
+.bg2 {
+    height: 50vh;
+    background-color: #121212;
+}
+
+.container {
+    width: 940px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.pencil {
+    background-image: url('./images/pencil.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+}
+.tablet {
+    width: 840px;
+    border: 3px solid #bdbdbd;
+    border-radius: 30px;
+    background-color: #121212;
+    padding: 22px;
+    position: relative;
+}
+.notepad {
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.page {
+    width: 49.5%;
+    height: 100%;
+    padding: 22px;
+    background-color: #fcfcfc;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form[name="new"] {
+    align-items: center;
+}
+h2 {
+    color: crimson;
+    font-size: 17px;
+    font-weight: normal;
+}
+input[type="checkbox"] {
+    width: 11px;
+    height: 11px;
+    margin-top: 26px;
+    margin-right: 2px;
+}
+span {
+    color: #30383b;
+}
+.left {
+    margin-left: -5px;
+}
+input[type="text"] {
+    width: 220px;
+    margin-top: 23px;
+    padding-bottom: 3px;
+    border: none;
+    border-bottom: 1px solid #30383b;
+    outline: none;
+    font-size: 15px;
+}
+button {
+    width: 78px;
+    height: 38px;
+    margin-top: 16px;
+    background-color: #30383b;
+    color: #fcfcfc;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:focus {
+    box-shadow: 1px 1px 2px 2px #B6B6B6, -1px -1px 2px 2px #B6B6B6;
+}
+.modal {
+    display: none;
+    width: 600px;
+    height: 80px;
+    padding: 20px;
+    background-color: #F5D5D6;
+    color: #5C1B17;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.modal > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.modal .uil {
+    font-size: 18px;
+    color: #AD7C80;
+    cursor: pointer;
+}
+.modal .uil:hover {
+    color: #30383b;
+}

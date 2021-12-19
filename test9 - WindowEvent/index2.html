@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test 9.2</title>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+	<link rel="stylesheet" href="./main2.css">
+</head>
+<body>
+
+	<div class="bg1"></div>
+	<div class="bg2"></div>
+
+	<div class="container">
+		<div class="pencil"></div>
+
+		<div class="tablet">
+
+			<div class="notepad">
+
+				<div class="page">
+					
+					<form name="list" id="list">
+						<h2>Список завдань</h2>
+
+						<label for="">
+							<input type="checkbox" name="point">
+							<span class="left">HTML5</span>
+						</label>
+
+						<label for="">
+							<input type="checkbox" name="point">
+							<span class="left">CSS3</span>
+						</label>
+
+						<label for="">
+							<input type="checkbox" name="point">
+							<span class="left">SASS/SCSS</span>
+						</label>
+
+						<label>
+							<input type="checkbox" name="point">
+							<span class="left">Bootstrap</span>
+						</label>
+					</form>
+					
+				</div>
+
+				<div class="page">
+
+					<form name="new">
+						<h2>Додати нове завдання</h2>
+						<input type="text" name="text">
+						<button type="button" name="button">додати</button>
+					</form>
+					
+				</div>
+
+			</div>
+
+			<div class="modal" id="modal1">
+				<div>
+					<h3>Попередження!</h3>
+					<i class="uil uil-times" onclick="clouseModal()"></i>
+				</div>
+				<p>Пусте поле не можна добавити.</p>
+			</div>
+
+			<div class="modal" id="modal2">
+				<div>
+					<h3>Попередження!</h3>
+					<i class="uil uil-times" onclick="clouseModal()"></i>
+				</div>
+				<p>Останній таск зі списку Ви не можете видалити.</p>
+			</div>
+
+		</div> <!-- .tablet -->
+	</div> <!-- .container -->
+
+	<script src="./script2.js"></script>
+</body>
+</html>
