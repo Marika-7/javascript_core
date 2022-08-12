@@ -40,25 +40,25 @@ hr {
     border-left: none;
     border-right: none;
 }
-/* p {} */
 .date {
+    width: 129px;
     font-size: 30px;
 }
 .time {
+    width: 338px;
     font-size: 100px;
 }
-.block-mini {
+.block__mini {
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-/* .stopwatch {} */
-.stopwatch > p {
+.stopwatch__time {
+    width: 254px;
     font-size: 50px;
 }
-/* form {} */
 button {
     width: 60px;
     height: 30px;
@@ -70,7 +70,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-button:focus {
+button:focus,
+button:disabled {
     border-color: #5270A4;
     border-radius: 2px;
 }
@@ -81,25 +82,26 @@ button:focus {
     display: block;
     padding: 12px;
     box-shadow: inset 1px 1px 12px 0px #121528;
+    overflow: auto;
 }
 .save p {
-    text-align: center;
-    margin-bottom: 10px;
+    width: 110px;
+    margin: 0 auto 10px;
     font-size: 22px;
 }
-/* .set-timer {} */
-.block:nth-child(5) p:first-child {
+.setTimer__time {
+    width: 79px;
     font-size: 80px;
 }
-.set-timer p {
+.setTimer__text {
     font-size: 20px;
     font-family: ds-digib;
 }
-/* form {} */
-.set-timer button {
+.setTimer button {
     width: 30px;
     font-size: 20px;
 }
-/* .timer {} */
-/* p {} */
-/* form {} */
+.timer__time {
+    width: 175px;
+    font-size: 80px;
+}
